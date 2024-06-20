@@ -48,7 +48,7 @@ table {
 }
 
 body {
-    background: #f8f8f8;    
+    background: rgb(202, 202, 202);    
 }
 
 .root {
@@ -69,19 +69,17 @@ body {
     z-index: -1;
     left: 0;
     top: 0;
-    transform-origin: left top;
-    filter: blur(3.5rem);
-    transition: ease 1.5s;
+    transform-origin: left top;    
 }
 
 .bouncing-blob--blue {
-    background: #1f8fffee;
+    background: rgb(0, 66, 207);
 }
 
 .bouncing-blob--purple {
-    background: #924fffee;
+    background: rgb(137, 0, 182);
 }
 
 .bouncing-blob--pink {
-    background: #ff13c8ee;
+    background: rgb(209, 0, 167);
 }

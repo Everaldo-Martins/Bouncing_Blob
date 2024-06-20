@@ -15,6 +15,8 @@ class BouncingBlob {
         this.yVel *= (this.y < 0 || this.y > window.innerHeight - this.element.offsetHeight) ? -1 : 1;
 
         this.element.style.transform = `translate(${this.x}px, ${this.y}px)`;
+        this.element.style.transition = `ease 1.5s`;
+        this.element.style.filter = `blur(45px)`; 
     }
 }
 
@@ -24,15 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const colors = ['blue', 'pink', 'purple'];
     const blobs = [];
 
-    colors.forEach((color, index) => {
+    colors.forEach(color => {
         const blob = document.createElement('span');
         blob.classList.add('bouncing-blob', `bouncing-blob--${color}`);
-        container.appendChild(blob);
+        container.appendChild(blob);        
     
         const x = Math.random() * (window.innerWidth - blob.offsetWidth);
         const y = Math.random() * (window.innerHeight - blob.offsetHeight);
-        const xVel = (Math.random() - 0.5) * index;
-        const yVel = (Math.random() - 0.5) * index;
+        const xVel = (Math.random() - 0.5) * 2;
+        const yVel = (Math.random() - 0.5) * 2;        
 
         blobs.push(new BouncingBlob(blob, x, y, xVel, yVel));
     });
