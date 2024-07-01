@@ -48,7 +48,7 @@ table {
 }
 
 body {
-    background: rgb(202, 202, 202);    
+    background: #f0f0f0;    
 }
 
 .root {
@@ -61,7 +61,7 @@ body {
 }
 
 .bouncing-blob {
-    width: 32vw;
+    width: 33vw;
     aspect-ratio: 1;
     border-radius: 50%;
     will-change: transform;
@@ -69,17 +69,19 @@ body {
     z-index: -1;
     left: 0;
     top: 0;
-    transform-origin: left top;    
+    transform-origin: left top; 
+    filter: blur(3rem);   
+    transition: all .3s;
 }
 
 .bouncing-blob--blue {
-    background: rgb(0, 66, 207);
+    background: #0062ffcc;
 }
 
 .bouncing-blob--purple {
-    background: rgb(137, 0, 182);
+    background: #8400ffcc;
 }
 
 .bouncing-blob--pink {
-    background: rgb(209, 0, 167);
+    background: #ff00cccc;
 }
