@@ -29,9 +29,9 @@ Bouncing_Blob/
 1. Clone o repositório ou faça o download dos arquivos.
 2. Abra o arquivo `index.html` em um navegador para visualizar a animação das bolhas.
 
-## Contribuição
+## Veja em execução
 
-Se você quiser contribuir para este projeto, sinta-se à vontade para abrir um Pull Request ou relatar problemas na página de Issues.
+- [Clique aqui](https://everaldo-martins.github.io/Bouncing_Blob/)
 
 ## Licença
 

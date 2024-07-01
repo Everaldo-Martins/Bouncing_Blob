@@ -20,7 +20,7 @@ class BouncingBlob {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector('.root');
+    const container = document.querySelector('#root');
     const colors = ['blue', 'pink', 'purple'];
     const blobs = [];
 
